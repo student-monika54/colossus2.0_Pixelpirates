@@ -1,0 +1,220 @@
+
+
+
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #A5D6A7;
+  color: black;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #2d523f;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background-color: #1b3c22;
+  color:#AFAA8C;
+}
+*/
+body {
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+ 
+
+  margin: 0;
+  padding:0;
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #A5D6A7;
+  color: black;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 20x;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #2d523f;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background-color: #1b3c22;
+  color:#AFAA8C;
+}
+
+
+
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-image:url('home.jpg');
+  /* background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Adjusts the size to cover the entire viewport */
+  background-position: center; 
+  text-align: center;
+  width: 86%;
+  margin-left: 200px;
+}
+
+.hero-image {
+  background: url('greenhouse.jpg') center/cover;
+  width: 92%;
+  height: 200px;
+  border-radius: 30px;
+  margin-left: 80px;
+  margin-right: 90px;
+
+}
+
+.harvest-btn {
+  background-color: #2d523f;
+  color: white;
+  padding: 12px 20px;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 400px;
+ 
+ 
+  font-size: 30px;
+}
+
+.harvest-btn:hover {
+  background-color: #1e3a2b;
+
+
+}
+
+/* Plant Section */
+.plant-section {
+
+  width: 100%;
+  margin-left: 80px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  
+
+.plant-box {
+  height: 300px;
+  width: 90%;
+  margin-top: 10px;
+  background-color: #A5D6A7;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row; /* Change to row for horizontal layout */
+  justify-content: space-evenly; /* Equal space between elements */
+  align-items: center; /* Align items vertically in the center */
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+
+.pic {
+  height: 255px; /* Container height */
+  width: 255px;  /* Container width */
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.pic img {
+  height: 100%; /* Makes the image fill the container height */
+  width: 100%;  /* Makes the image fill the container width */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the container */
+}
+
+
+.plant-info {
+  margin-left: 120px;
+  padding-left: 120px;
+ 
+  font-size: 30px;
+
+}
+
+.select-btn {
+  background-color: #2d523f;
+  color: white;
+  padding: 8px 15px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+  width: 300px;
+  margin-right: 10px;
+  /* margin-right: 300px; */
+}
+
+.select-btn:hover {
+  background-color: #1e3a2b;
+}
+
+
+.greet{
+  text-align: left;
+  margin-bottom: 50px;
+ 
+  
+}
+}
