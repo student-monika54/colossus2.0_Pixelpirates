@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌿 BalcoBloom – Plant Care AI</title>
+  <link rel="stylesheet" href="ml.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🌿 BalcoBloom</h1>
+    <p>Smart Plant Care powered by IoT + AI</p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>📊 Live Sensor Data</h2>
+      <ul>
+        <li>🌡 Temperature: <span id="temp">--</span>°C</li>
+        <li>💧 Humidity: <span id="humid">--</span>%</li>
+        <li>🪴 Soil Moisture: <span id="moist">--</span>%</li>
+        <li>☀ Light (LDR): <span id="light">--</span></li>
+      </ul>
+    </section>
+
+    <section class="card highlight">
+      <h2>🤖 AI Recommendation</h2>
+      <p class="big">🚿 Pump Status: <strong id="prediction">--</strong></p>
+      <p>🎯 Confidence: <span id="confidence">--</span></p>
+      <p>🌫 Mister Status (Sent to Firebase): <span id="mister">--</span></p>
+      <p id="care">Waiting for data...</p>
+    </section>
+  </main>
+
+  <script src="ml.js"></script>
+</body>
+</html>
